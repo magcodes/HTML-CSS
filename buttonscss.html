@@ -8,7 +8,12 @@
         border: 0px;
         margin-left: 50px;
 
+        transition: opacity 0.15s;
     }
+    .uber-button:hover{
+        opacity: 0.65;
+    }
+
     .amazon-button{
         background-color: rgb(255, 216, 20);
         height: 40px;
@@ -18,7 +23,13 @@
         margin-left: 50px;
         font-size: 16px;
         cursor: pointer;
+
+        transition: background-color 0.15s;
     }
+    .amazon-button:hover{
+        background-color: rgb(246, 207, 14);
+    }
+
     .signUp-button{
         background-color: rgb(46, 164, 79);
         height: 40px;
@@ -29,7 +40,14 @@
         color: white;
         font-size: 16px;
         font-weight: 100;
+
+        transition: box-shadow 0.15s;
     }
+
+    .signUp-button:hover{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
     .bootstrap-button1{
         background-color: rgb(121, 82, 179);
         height: 40px;
@@ -40,6 +58,10 @@
         font-size: 16px;
         font-weight: 100;
         margin-left: 50px;
+        transition: opacity 0.15s;
+    }
+    .bootstrap-button1:hover{
+        background-color: rgb(131, 66, 228);
     }
     .bootstrap-button2{
         background-color: white;
@@ -52,7 +74,15 @@
         border-radius: 4px;
         font-size: 16px;
         font-weight: 100;
+
+        transition: background-color 0.15s,
+                    color 0.15s;
     }
+    .bootstrap-button2:hover{
+        background-color: rgb(108, 117, 125);
+        color: white;
+    }
+    
     .linkedIn-button1{
         background-color: rgb(10, 102, 194);
         color: white;
@@ -63,7 +93,12 @@
         font-size: 16px;
         font-weight:bold;
         margin-left: 50px;
+        transition: background-color 0.15s;
     }
+    .linkedIn-button1:hover{
+        background-color: rgb(6, 86, 166);
+    }
+
     .linkedIn-button2{
         background-color: white;
         color: rgb(10, 102, 194);
@@ -75,10 +110,24 @@
         border-radius: 20px;
         font-size: 18px;
         font-weight: bold;
+
+        transition: background-color 0.15s,
+                    border-width 0.15s;
     }
+    .linkedIn-button2:hover{
+        background-color:rgb(199, 223, 248);
+        border-width: 2px;
+    }
+
+    /* challenge exercise, Amazon checkout  */
     .backToAmazon{
         font-size: 20px;
         color: rgb(0, 113, 133);
+
+        transition: color 0.15s;
+    }
+    .backToAmazon:hover{ 
+        color: rgb(238, 32, 28)
     }
     .running{
         font-size: 28px;
@@ -101,15 +150,34 @@
         border-radius: 20px;
         font-size: 16px;
         border: none;
+
+        transition: background-color 0.15s,
+                    opacity 0.15s;
+    }
+    .addToCart-Button:hover{
+        background-color: rgb(212, 177, 6);
+    }
+    .addToCart-Button:active{
+        opacity: 0.75;
     }
     .buyNow-Button{
-        background-color: rgb(255, 164, 28);
+        background-color: rgb(209, 169, 10);
         height: 40px;
         width: 180px;
         border-radius: 20px;
         font-size: 16px;
         border: none;
+
+        transition: background-color 0.15s,
+                    opacity 0.15s;
     }
+    .buyNow-Button:hover{
+        background-color: rgb(186, 150, 6);
+    }
+    .buyNow-Button:active{
+        opacity: 0.75;
+    }
+
 </style>
 
 <p>Uber</p>
