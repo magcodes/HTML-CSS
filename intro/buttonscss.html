@@ -1,0 +1,325 @@
+<!-- uber button -->
+<style>
+    .uber-button{
+        background-color: black;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: 0px;
+        margin-left: 50px;
+
+        transition: opacity 0.15s;
+    }
+    .uber-button:hover{
+        opacity: 0.65;
+    }
+
+    .amazon-button{
+        background-color: rgb(255, 216, 20);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 20px;
+        border: 0px;
+        margin-left: 50px;
+        font-size: 16px;
+        cursor: pointer;
+
+        transition: background-color 0.15s;
+    }
+    .amazon-button:hover{
+        background-color: rgb(246, 207, 14);
+    }
+
+    .signUp-button{
+        background-color: rgb(46, 164, 79);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: 0px;
+        border-radius: 4px;
+        margin-left: 50px;
+        color: white;
+        font-size: 16px;
+        font-weight: 100;
+
+        transition: box-shadow 0.15s;
+    }
+    .signUp-button:hover{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .bootstrap-button1{
+        background-color: rgb(121, 82, 179);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: 0px;
+        border-radius: 30px;
+        color: white;
+        font-size: 16px;
+        font-weight: 100;
+        margin-left: 50px;
+        transition: opacity 0.15s;
+    }
+    .bootstrap-button1:hover{
+        background-color: rgb(131, 66, 228);
+    }
+    .bootstrap-button2{
+        background-color: white;
+        color: rgb(108, 117, 125);
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 20px;
+        border:solid;
+        border-width: 1px;
+        border-color: rgb(108, 117, 125);
+        font-size: 16px;
+        font-weight: 100;
+
+        transition: background-color 0.15s,
+                    color 0.15s;
+    }
+    .bootstrap-button2:hover{
+        background-color: rgb(108, 117, 125);
+        color: white;
+    }
+    
+    .linkedIn-button1{
+        background-color: rgb(10, 102, 194);
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 20px;
+        border: 0px;
+        font-size: 16px;
+        font-weight:bold;
+        margin-left: 50px;
+        transition: background-color 0.15s;
+    }
+    .linkedIn-button1:hover{
+        background-color: rgb(6, 86, 166);
+    }
+
+    .linkedIn-button2{
+        background-color: white;
+        color: rgb(10, 102, 194);
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 20px;
+        border:solid;
+        border-width: 1px;
+        border-color:rgb(10, 102, 194);
+        font-size: 16px;
+        font-weight: bold;
+
+        transition: background-color 0.15s,
+                    border-width 0.15s,
+                    padding-top 0.15s,
+                    padding-bottom 0.15s;
+    }
+    .linkedIn-button2:hover{
+        background-color:rgb(199, 223, 248);
+        border-width: 2px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    /* challenge exercise, Amazon checkout  */
+    .backToAmazon{
+        font-size: 20px;
+        color: rgb(0, 113, 133);
+
+        transition: color 0.15s;
+    }
+    .backToAmazon:hover{ 
+        color: rgb(238, 32, 28)
+    }
+    .running{
+        font-size: 28px;
+        color: black;
+        font-weight: bold;
+    }
+    .inStock{
+        color: rgb(0, 118, 0);
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .freeDelivery{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .addToCart-Button{
+        background-color: rgb(255, 216, 20);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 20px;
+        font-size: 16px;
+        border: none;
+
+        transition: background-color 0.15s,
+                    opacity 0.15s;
+    }
+    .addToCart-Button:hover{
+        background-color: rgb(212, 177, 6);
+    }
+    .addToCart-Button:active{
+        opacity: 0.75;
+    }
+    .buyNow-Button{
+        background-color: rgb(209, 169, 10);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 20px;
+        font-size: 16px;
+        border: none;
+
+        transition: background-color 0.15s,
+                    opacity 0.15s;
+    }
+    .buyNow-Button:hover{
+        background-color: rgb(186, 150, 6);
+    }
+    .buyNow-Button:active{
+        opacity: 0.75;
+    }
+
+    .pagination-button{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: rgb(235, 232, 232);
+        border-radius: 3px;
+        border: solid;
+        border-width: 1px;
+        border-color: rgb(6, 1, 9);
+        margin-left: 15px;
+        margin-right: 10px;
+        font-size: 16px;
+        font-weight: 600
+    }
+    .pagination a {
+        color: rgb(82, 0, 133);
+        margin-left: 5px;
+        margin-left: 5px;
+        font-size: 20px;
+    }
+
+    .stretch-button{
+        background-color: rgb(0, 118, 0);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: white;
+        border: none;
+        font-size: 20px;
+
+        transition: paddig 0.2s, font-size 0.2s;
+    }
+    .stretch-button:hover{
+        padding: 30px 30px 35px 35px;
+        font-size: 30px
+    }
+    .shadow-button{
+        background-color: rgb(0, 118, 0);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: white;
+        border: none;
+        font-size: 20px;
+        box-shadow: 6px 6px 8px rgba(8, 8, 8, 0.2);
+
+        transition: margin 0.15s;
+    }
+    .shadow-button:active{
+         margin: 10px 0px 0px 10px
+    }
+
+    .number-button{
+        background-color: rgb(0, 118, 0);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: white;
+        font-size: 16px;
+        border: none;
+        margin: 10px;
+
+        transition: margin-left 0.15s, margin-right 0.15s,
+                    padding-left 0.15s, padding-right 0.15s;
+    }
+    .number-button:hover{
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-left: 25px;
+        padding-right: 25px;
+        
+    }
+
+</style>
+
+<!-- <p>Uber</p> -->
+<button class="uber-button">Request now</button>
+
+<!-- <p>Amazon</p> -->
+<button class="amazon-button">Add to Cart</button>
+
+<!-- <p>GitHub</p> -->
+<button class="signUp-button">Sign up</button>
+
+<!-- <p>Bootstrap</p> -->
+<button class="bootstrap-button1">Get started</button>
+<button class="bootstrap-button2">Download</button>
+
+<!-- <p>LinkedIn</p> -->
+<button class="linkedIn-button1">Apply on company website</button>
+<button class="linkedIn-button2">Save</button>
+
+<!-- challenge exercise, Amazon checkout -->
+<br> <br> <br>
+<a href="https://www.amazon.com/" class="backToAmazon">Back to Amazon</a>
+<p class="running">Nike black running shoes</p>
+<p class="inStock">$39 - in stock.</p>
+<p class="freeDelivery">Free delivery tomorrow.</p>
+<button class="addToCart-Button">Add to cart</button>
+<button class="buyNow-Button">Buy now</button>
+
+<br> <br> <br>
+<p class="pagination">
+    <button class="pagination-button">Back</button>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <button class="pagination-button">Next</button>
+</p>
+
+<button class="stretch-button">Stretch</button>
+<br> <br>
+<button class="shadow-button">Shadow</button>
+
+<br> <br>
+<button class="number-button">One</button>
+<button class="number-button">Two</button>
+<button class="number-button">Three</button>
