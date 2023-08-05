@@ -42,9 +42,53 @@
                 font-size: 12px;
                  color: rgb(187, 185, 185);
             }
+            .sections{
+                width: 100px;
+                display: inline-block;
+                margin-right: 5px;
+                margin-top: 20px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            }
+            .profile-picture{
+                width: 100px;
+                height: 100px;
+                display: inline-block;
+                object-fit: cover;
+            }
+            .profile-picture2{
+                width: 15px;
+                height: 15px;
+                display: inline-block;
+                object-fit: cover;
+                border-radius: 10px;
+                vertical-align: middle;
+            }
+            .name{
+                margin-top: 5px;
+                margin-bottom: 0;
+                font-size: 12px;
+            }
+            .friends{
+                margin-left: 5px;
+                margin-bottom: 8px;
+            }
+            .mutual{
+                display: inline-block;
+                font-size: 8px;
+                vertical-align: middle;
+            }
+            .add{
+                background-color: rgb(35, 112, 246);
+                color: white;
+                padding: 5px 5px 5px 5px;
+                font-size: 10px;
+                border-style: none;
+                border-radius: 2px;
+            }
 
         </style>
     </head>
+    
     <body>
         <div class="square"></div>
         <div class="circle"></div>
@@ -58,5 +102,36 @@
             <p class="music1">Install YouTube Music</p>
             <p class="music2">And YouTube Music to your desktop for quick and easy access</p>
         </div>
+
+        <div class="sections">
+            <img class="profile-picture" src="image.jpg">
+            <div class="friends">
+                <p class="name">Olivier</p>
+                <img class="profile-picture2" src="image.jpg">
+                <p class="mutual">2 mutual friends</p>
+                <button class="add">Add Friend</button>
+            </div>
+        </div>
+
+        <div class="sections">
+            <img class="profile-picture" src="image.jpg">        
+            <div class="friends">
+                <p class="name">Mimi</p>
+                <img class="profile-picture2" src="image.jpg">
+                <p class="mutual">2 mutual friends</p>
+                <button class="add">Add Friend</button>
+            </div>                   
+        </div>
+
+        <div class="sections">
+            <img class="profile-picture" src="image.jpg">        
+            <div class="friends">
+                <p class="name">Rex</p>
+                <img class="profile-picture2" src="image.jpg">
+                <p class="mutual">2 mutual friends</p>
+                <button class="add">Add Friend</button>
+            </div>                       
+        </div>
+
     </body>
 </html>
