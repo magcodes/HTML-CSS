@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            .flexa, .flexc, .flexd, .flexf, .flexg{
+                display: flex;
+                flex-direction: row;
+                margin-top: 20px;
+            }
+            .firsta{
+                background-color: aqua;
+                width: 200px;
+            }
+            .seconda{
+                background-color: pink;
+                width: 75px;
+            }
+            .firstb{
+                background-color: aqua;
+                width: 50px;
+            }
+            .secondb{
+                background-color: pink;
+                flex:1
+            }
+            .thirdb{
+                background-color: aqua;
+                width: 75px;
+            }
+            .flexc{
+                justify-content: space-between ;
+            }
+            .flexd{
+                height: 50px;
+                border-style: solid;
+                border-color: gray;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .flexe{
+                margin-top: 20px;
+                width: 300px;
+                border-style: solid;
+                border-color: gray;
+                border-radius: 10px;
+                border-width: 1px;
+            }
+            .numbers{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 4px 12px;
+
+            }
+            .count{
+                background-color: rgb(49, 109, 245);
+                color: white;
+                border-radius: 20px;
+                padding: 3px 10px 3px 10px;
+                border: none;
+            }
+            .flexf{
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgb(175, 97, 249);
+                padding: 0px 8px 0px 15px;
+                height: 50px;
+            }
+            .search{
+                border-radius: 150px;
+                border: none;
+                width: 400px;
+                padding: 5px 15px
+            }
+            .download{
+                border-radius: 2px;
+                border-width: 1px;
+                border-color: white;
+                background-color: rgb(175, 97, 249);
+                color: white;
+                padding: 5px 10px;
+            }
+            .flexg{
+                align-items: center;
+                width: 300px;
+            }
+            .profile-picture{
+                width: 50px;
+                height: 50px;
+                border-radius: 25px;
+                margin-right: 20px;
+            }
+            .text{
+                width: 200px
+            }
+            p{
+                margin-top: 0;
+                margin-bottom: 0;
+                font-family: Arial;
+            }
+            .follow-button{
+                background-color: rgb(48, 111, 246);
+                color: white;
+                border-radius: 2px;
+                border: none;
+                padding: 5px 10px;
+            }
+            .name{
+                font-weight: bold;
+                font-size: 14px;
+            }
+            .type{
+                font-size: 14px;
+                color:rgb(198, 214, 249)
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <div class="flexa">
+           <div class="firsta">200px</div> 
+           <div class="seconda">75px</div> 
+        </div>
+
+        <div class="flexa">
+           <div class="firstb">item1</div> 
+           <div class="secondb">item2</div> 
+           <div class="thirdb">item3</div> 
+        </div>
+
+        <div class="flexc">
+           <div style="background-color: pink;">item1</div> 
+           <div style="background-color: pink;">item2</div>  
+           <div style="background-color: pink;">item3</div> 
+           <div style="background-color: pink;">item4</div> 
+        </div>
+
+        <div class="flexd">
+           <div style="background-color: pink;">item1</div> 
+           <div style="background-color: pink;">item2</div> 
+        </div>
+
+        <div class="flexe">
+            <div class="numbers">
+                <p>Home</p>
+                <button class="count">14</button>
+            </div>
+            <div class="numbers">
+                <p>Notification</p>
+                <button class="count">5</button>
+            </div>
+             <div class="numbers">
+                <p>Messages</p>
+                <button class="count">4</button>
+            </div>          
+        </div>
+
+        <div class="flexf">
+            <p>Home</p>
+            <input type="text" placeholder="Search" class="search">
+            <button class="download">Download</button>
+        </div>
+
+        <div class="flexg">
+            <img src="image.jpg" class="profile-picture">
+            <div class="text">
+                <p class="name">Oliver</p>
+                <p class="type">the cat</p>
+                <p class="type">Popular</p>
+            </div>
+            <button class="follow-button">Follow</button>
+        </div>
+
+        <div class="flexg">
+            <img src="image.jpg" class="profile-picture">
+            <div class="text">
+                <p class="name">Mimi</p>
+                <p class="type">Happy Bulldog</p>
+                <p class="type">Popular</p>
+            </div>
+            <button class="follow-button">Follow</button>
+        </div>
+
+        <div class="flexg">
+            <img src="image.jpg" class="profile-picture">
+            <div class="text">
+                <p class="name">Mary</p>
+                <p class="type">Hungry Cat</p>
+                <p class="type">Popular</p>
+            </div>
+            <button class="follow-button">Follow</button>
+        </div>
+
+    </body>
+</html>
