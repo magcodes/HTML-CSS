@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                font-family: Arial;
+            }
+            .flexa, .flexb, .flexba{
+                display: flex;
+                flex-direction: row;
+                height: 50px;
+            }
+            .flexa1, .flexb1{
+                background-color: pink;
+                width: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .flexa2, .flexb2{
+                background-color: blue;
+                width: 200px;
+            }
+            .flexba{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .iosgmail{
+                width: 400px;
+                padding: 10px 10px 20px 10px;
+                box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
+                border-radius: 5px;                
+            }
+            .type{
+                font-size: 12px;
+                color: gray;
+            }
+            .inner-details{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-top: 12px;
+            }
+             .profile-picture{
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 25px;
+            }
+            .content{
+                margin-left: 10px;
+                flex: 1;
+            }
+            .inner-details2{
+                display: flex;
+                flex-direction: row;
+                justify-content:space-between;
+            }
+            .youtube-link{
+                display: flex;
+                flex-direction: row;
+                margin: 5px;
+                border: solid;
+                border-width: 1px;
+                border-color: grey;
+                border-radius: 10px;
+                /* padding: 10px; */
+                overflow: hidden;
+                align-items: center;
+            }
+            .empty-space{
+                background-color: gray;
+                width: 100px;
+                height: 100px;
+                margin-right: 10px;
+            }
+            .video-info{
+                flex: 1;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="flexa">
+            <div class="flexa1.1">
+                <div class="flexa1">item1</div>
+            </div>
+
+            <div class="flexa2">item2</div>
+        </div>
+
+        <br>
+
+        <div class="flexb">
+            <div class="flexb1">item1</div>
+            <div class="flexb2">
+                <div>item1</div>
+                
+                <div class="flexba">
+                    <div class="align-items: start;">row</div>
+                    <div class="align-items: center;">row</div>
+                </div>
+               
+            </div>
+        </div>
+        <br>
+
+        <div class="iosgmail">
+            <div class="type">ALL INBOXES</div>
+            <div class="inner-details"> 
+                <div>
+                    <img class="profile-picture" src="image.jpg">
+                </div>
+                <div class="content">
+                    <div class="inner-details2">
+                        <div style="font-size:18px; font-weight: bold;">Chewy Promotions</div>
+                        <div style="font-size:14px;">4:58</div>
+                    </div>
+                    <div>Biggest sales of the year!</div>
+                    <div style="color:gray;">Hey there! We're writing to tell you about our...</div>
+                </div>
+            </div>
+
+            <div class="inner-details"> 
+                <div>
+                    <img class="profile-picture" src="image.jpg">
+                </div>
+                <div class="content">
+                    <div class="inner-details2">
+                        <div style="font-size:18px; font-weight: bold;">Best Buy</div>
+                        <div style="font-size:14px;">4:58</div>
+                    </div>
+                    <div>Your Best Buy eReceipt!</div>
+                    <div style="color:gray;">Hey there! We're writing to tell you about our...</div>
+                </div>
+            </div>
+
+            <div class="inner-details"> 
+                <div>
+                    <img class="profile-picture" src="image.jpg">
+                </div>
+                <div class="content">
+                    <div class="inner-details2">
+                        <div style="font-size:18px; font-weight: bold;">Netflix</div>
+                        <div style="font-size:14px;">4:58</div>
+                    </div>
+                    <div>Here's what's coming soon to Netflix</div>
+                    <div style="color:gray;">Hey there! We're writing to tell you about our...</div>
+                </div>
+            </div>
+        </div>
+
+<BR>
+         <div class="iosgmail">
+            <div class="inner-details"> 
+                <div>
+                    <img class="profile-picture" src="image.jpg">
+                </div>
+                <div class="video-preview">
+                    <div style="font-size:18px; font-weight: bold;">maginspires.dev @MagInspiresDev</div>
+                    <div>What is backeng web development? A complete overview. New video is up!</div>
+
+                    <div class="youtube-link">
+                        <div class="empty-space"></div>
+                        <div class="video-info">
+                            youtube.com <br> Backend web development - a complete overview(2021)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+       
+    </body>
+</html>
