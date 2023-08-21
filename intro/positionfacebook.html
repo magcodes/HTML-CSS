@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            body{
+                height: 1000px;
+            }
+            .header{
+                display: flex;
+                flex-direction: row;
+                background-color: red;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 40px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 50px;
+            }
+            .profile, .profile2{
+                width: 30px;
+                height: 30px;
+                border-radius: 15px;
+                margin-right: 12px;
+                object-fit: cover;
+            }
+            .profile2{
+                margin-bottom: 10px;
+            }
+            .person{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .add, .message{
+                background-color: rgb(70, 120, 247);
+                color: white;
+                border-radius: 5px;
+                border: none;
+                padding: 5px 10px;
+            }
+            .message{
+                background-color: rgb(250, 247, 247);
+                color: black;
+            }
+            .sidebarA{
+                position: fixed;
+                top: 50px;
+                left: 0;
+                bottom: 0;
+                background-color: rgb(33, 33,33);
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 10px;
+            }
+            .sidebarB{
+                position: fixed;
+                width: 150px;
+                top: 50px;
+                left: 60px;
+                bottom: 0;
+                background-color: rgb(55, 55, 55);
+                color: white;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 15px;
+
+            }
+            .info{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .text{
+                margin-top: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="person">
+                <img src="image.jpg" class="profile">
+                <div>Oliver Cat</div>
+            </div>
+            <div>
+                <button class="add">Add Friend</button>
+                <button class="message">Message</button>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebarA">
+                <div>
+                    <img src="image.jpg" class="profile2">
+                </div>
+                  <div>
+                    <img src="image.jpg" class="profile2">
+                </div>
+                  <div>
+                    <img src="image.jpg" class="profile2">
+                </div>
+            </div>
+
+            <div class="sidebarB">
+                <div class="info">
+                    <div>INFO</div>
+                    <div>+</div>
+                </div>
+                <div class="text">#  new-videos</div>
+                <div class="text">#  updates</div>
+                <div class="text">#  faq</div>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+    </body>
+</html>
