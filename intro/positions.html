@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            body{
+                height: 3000px;
+            }
+            .close{
+                color: white;
+                background-color: #000000;
+                position: absolute;
+                top: 5px;
+                right: 10px;
+                border-radius: 25px;
+                height: 45px;
+                width: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .box{
+                position: fixed;
+                width: 320px;
+                height: 180px;
+                background-color: grey;
+                bottom: 10px;
+                right: 10px;
+            }
+            .box1{
+                position: fixed;
+                width: 320px;
+                height: 180px;
+                background-color: grey;
+                bottom: 190px;
+                right: 10px;
+                margin-bottom: 15px;
+            }
+            .close1{
+                color: white;
+                background-color: #000000;
+                position: absolute;
+                top: -15px;
+                left: -15px;
+                border-radius: 25px;
+                height: 45px;
+                width: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .time{
+                background-color: #000000;
+                color: white;
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                padding: 5px 10px;
+            }
+            .pic{
+                height: 300px;
+                width: 300px;
+                object-fit: cover;
+            }
+            .shirt{
+                position: relative;
+                display: inline-block;
+                
+            }
+            .discount{
+                background-color: black;
+                color: white;
+                position: absolute;
+                right: 0;
+                top: 10px;
+                padding: 5px;
+            }
+            .cart{
+                position: absolute;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                height: 100px;
+                background-color: rgba(255, 255, 255, 0.8);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .cartButton{
+                padding: 5px;
+                border-color: black;
+                border-style: solid;
+            }
+        </style>
+    </head>
+
+    <html>
+        <div class="close">X</div>     
+        <div class="box">
+            box
+        </div>
+        <hr>
+        <div class="box1">
+            <div class="close1">X</div>
+            <div class="time">0:29</div>
+            box
+        </div>
+
+        <div class="shirt">
+            <img class="pic" src="image.jpg">
+            <div class="discount">20% OFF</div>
+            <div class="cart">
+                <button class="cartButton">Add to Cart</button>
+            </div>
+        </div>
+    </html>
+</html>
